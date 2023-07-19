@@ -3,7 +3,7 @@ $(document).ready(function() {
   var TITLE = 'Household Income for Select US Geographies, 2018';
 
   // `false` for vertical (column) chart, `true` for horizontal bar
-  var HORIZONTAL = false;
+  var HORIZONTAL = true;
 
   // `false` for individual bars, `true` for stacked bars
   var STACKED = false;  
