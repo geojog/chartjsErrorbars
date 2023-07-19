@@ -3,10 +3,10 @@ $(document).ready(function() {
   var TITLE = 'Household Income for Select US Geographies, 2018';
 
   // `false` for vertical (column) chart, `true` for horizontal bar
-  var HORIZONTAL = true;
+  var HORIZONTAL = false;
 
   // `false` for individual bars, `true` for stacked bars
-  var STACKED = false;  
+  var STACKED = false;
 
   // Which column defines "bucket" names?
   var LABELS = 'geo';
@@ -28,8 +28,8 @@ $(document).ready(function() {
   ];
 
   // x-axis label and label in tooltip
-  var X_AXIS = 'Geography'; 
-  
+  var X_AXIS = 'Geography';
+
   // y-axis label and label in tooltip
   var Y_AXIS = 'US Dollars';
 
@@ -76,7 +76,7 @@ $(document).ready(function() {
     new Chart(ctx, {
       type: HORIZONTAL ? 'horizontalBar' : 'bar',
       data: barChartData,
-      
+
       options: {
         title: {
           display: true,
